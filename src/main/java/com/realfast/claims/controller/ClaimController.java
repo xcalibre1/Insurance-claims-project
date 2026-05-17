@@ -42,7 +42,7 @@ public class ClaimController {
     }
 
     @GetMapping
-    public List<ClaimResponse> getByStatus(@RequestParam ClaimStatus status) {
+    public List<ClaimResponse> listByStatus(@RequestParam ClaimStatus status) {
         return claimService.getByStatus(status);
     }
 }
